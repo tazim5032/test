@@ -4,7 +4,8 @@ Follow the steps to stream your app:
 
 # **Step 2.** Click ***Add Application.***
 
-Figure 1. Click on Add Application
+![Figure 1. Click on Add
+Application](docs/images/image-20241203-174651.png)
 
 # **Step 3.** Click ***browse.***
 
