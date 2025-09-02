@@ -1,54 +1,78 @@
-This document explains how user-generated files (such as PDFs, screenshots, and other runtime outputs) are stored in Eagle 3D Streaming and how they are managed and deleted over time.
+Follow the steps to stream your app:
 
-Where Files Are Stored
-======================
+**Step 1.** Login to [Control Panel](https://newcontrolpanel.eagle3dstreaming.com/)
+===================================================================================
 
-Files are stored in **two main locations**:
+**Step 2.** Click _**Add Application.**_
+========================================
 
-1.  **Streaming Machine (where the Unreal app is running)**
-    
-    *   Files generated or uploaded during runtime (e.g., screenshots, PDFs) are stored in the same machine that runs your Unreal application.
-        
-2.  **Cloud Storage**
-    
-    *   Files may also be uploaded to our cloud storage.
-        
-    *   These files are only accessible **programmatically** (via APIs) and cannot be accessed manually.
-        
+Figure 1. Click on Add Application
 
-File Deletion Policy
-====================
-
-### Cloud Storage
-
-*   Files stored in cloud storage are **automatically deleted after 7 days**.
-    
-*   Access to these files is programmatic only, no manual browsing is allowed.  
-      
-    
-
-### Streaming Machine
-
-*   Files stored in the streaming machine are cleaned up **periodically** when:
-    
-    *   A **new version of your app** is uploaded.
-        
-    *   The system performs a scheduled cleanup.
-        
-*   This cleanup does **not always happen immediately** and is triggered periodically.
-    
-*   **Important:** If files are not saved inside your **app directory**, our system will not delete them.
-    
-
-File Management Recommendations
+**Step 3.** Click _**browse.**_
 ===============================
 
-*   **Save inside the app directory**: Ensure files are written within your app directory so they are automatically included in cleanup operations.
-    
-*   **Overwriting files**: You can safely overwrite an existing file by saving a new file with the same name. The older file will be replaced.
-    
-*   **Avoid storing outside the app directory**: Files saved elsewhere will persist and may need manual removal.
-    
+Figure 2. Browse Your Zip File
+
+**Step 4.** Select the prepared _**ZIP file.**_
+===============================================
+
+Figure 3. Select the Prepared ZIP File
+
+**Step 5.** Give a name of your App and click on _**UPLOAD**_ button
+====================================================================
+
+Figure 4. Give an App Name and Click on Upload Button
+
+You can also give a thumbnail of your app. You can enable the **Send Updates On Email** button to get alert by an email when the app is ready.
+
+**When you upload an app it undergoes 6 phases in the upload sequence to finally get uploaded. To see what happens in these phase see** **this docs**
+
+**Step 6.** Wait some times(Est. Time will be shown in the control panel).
+==========================================================================
+
+**If you face any kind of error in the upload sequences then check** **this docs**
+
+Figure 5. App is Uploading
+
+**Step 7.** You can see your App in the control panel. Click on it.
+===================================================================
+
+Figure 6. App is Uploaded
+
+**Step 8.** Click on the app and click _**Create New Stream link.**_
+====================================================================
+
+Figure 7. Create New Stream Link
+
+**Step 9.** Click on _**Play App**_ to stream your App.
+=======================================================
+
+Figure 8. Play App
+
+**Step 10.** Wait for machine.
+==============================
+
+**If the app is stuck in a queue then check** [**this documentation**](https://docs.eagle3dstreaming.com/wiki/phases-after-accessing-the-streaming-url#PhasesAfterAccessingtheStreamingURL-Troubleshooting)
+
+Figure 9. The UI while Waiting for a Machine
+
+**Step 11.** Press _**Play**_ button.
+=====================================
+
+**If play button is not showing, please refer to** [**this documentation**](https://docs.eagle3dstreaming.com/wiki/phases-after-accessing-the-streaming-url#PhasesAfterAccessingtheStreamingURL-Troubleshooting)
+
+**If you want to learn about all the phases after accessing your streaming URL, please refers to** **this documentations**
+
+Figure 10. Press Play Button
+
+**Step 12.** Now you can see the app is streaming.
+==================================================
+
+Figure 11. The App is Streaming
+
+**Congratulations! You have streamed your own app successfully. If you are interested in set up and stream a multiplayer app then check** **this document**
+
+**You can stream your app from your mobile phone. For this check** **this document**
 
 * * *
 
