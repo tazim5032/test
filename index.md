@@ -1,65 +1,204 @@
-This document explains how user-generated files (such as PDFs, screenshots, and other runtime outputs) are stored in Eagle 3D Streaming and how they are managed and deleted over time.
-
-Where Files Are Stored
-======================
-
-Files are stored in **two main locations**:
-
-1.  **Streaming Machine (where the Unreal app is running)**
-    
-    *   Files generated or uploaded during runtime (e.g., screenshots, PDFs) are stored in the same machine that runs your Unreal application.
-        
-2.  **Cloud Storage**
-    
-    *   Files may also be uploaded to our cloud storage.
-        
-    *   These files are only accessible **programmatically** (via APIs) and cannot be accessed manually.
-        
-
-File Deletion Policy
-====================
-
-### Cloud Storage
-
-*   Files stored in cloud storage are **automatically deleted after 7 days**.
-    
-*   Access to these files is programmatic only, no manual browsing is allowed.  
-      
-    
-
-### Streaming Machine
-
-*   Files stored in the streaming machine are cleaned up **periodically** when:
-    
-    *   A **new version of your app** is uploaded.
-        
-    *   The system performs a scheduled cleanup.
-        
-*   This cleanup does **not always happen immediately** and is triggered periodically.
-    
-*   **Important:** If files are not saved inside your **app directory**, our system will not delete them.
-    
-
-File Management Recommendations
-===============================
-
-*   **Save inside the app directory**: Ensure files are written within your app directory so they are automatically included in cleanup operations.
-    
-*   **Overwriting files**: You can safely overwrite an existing file by saving a new file with the same name. The older file will be replaced.
-    
-*   **Avoid storing outside the app directory**: Files saved elsewhere will persist and may need manual removal.
-    
-
-* * *
-
-### Need help?
-
-🛠️ Contact our [**Support Team**](https://eagle3dstreaming.atlassian.net/servicedesk/customer/portals)
-
-💬 Join the [**Community on Discord**](https://discord.gg/GRXD29Ah42)
-
-🆓 [**Get Started for free**](https://controlpanel.eagle3dstreaming.com/signup)
-
-Follow us on:
-
-[**Facebook**](https://www.facebook.com/Eagle3DStreaming/) | [**GitHub**](https://github.com/e3ds) | [**LinkedIn**](https://www.linkedin.com/company/eagle-3d-streaming) | [**YouTube**](https://www.youtube.com/@eagle3dstreaming)
+<p />
+<p>Follow the steps to stream your app:</p>
+<p />
+<h1><strong>Step 1.</strong>  Login to <a href="https://newcontrolpanel.eagle3dstreaming.com/">Control Panel</a></h1>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 2.</strong> Click <em><strong>Add Application.</strong></em></h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="425" ac:original-width="763" ac:custom-width="true" ac:alt="image-20241203-174651.png" ac:width="760"><ri:attachment ri:filename="image-20241203-174651.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 1. Click on Add Application</p></ac:caption></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 3. </strong>Click<em> <strong>browse.</strong></em></h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="742" ac:original-width="1169" ac:custom-width="true" ac:width="760" ac:src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmHypc3-89pCYMK2Kkvj1QehXmNvtPiuNmyznw7fUpoafNNPcu7-ekBjdL_i6OJMTLk3HjXQOPkD6vLh8-hkn56NQFdAu5RZEjeFfsAm9i4JpLo3mmoAwphtONw58pxCcFl8eTE4wmYVZV1Ll9nQMliTfv?key=sE87-shlUbo--tg27OamHw"><ri:url ri:value="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmHypc3-89pCYMK2Kkvj1QehXmNvtPiuNmyznw7fUpoafNNPcu7-ekBjdL_i6OJMTLk3HjXQOPkD6vLh8-hkn56NQFdAu5RZEjeFfsAm9i4JpLo3mmoAwphtONw58pxCcFl8eTE4wmYVZV1Ll9nQMliTfv?key=sE87-shlUbo--tg27OamHw" /><ac:caption>
+<p>Figure 2. Browse Your Zip File</p></ac:caption><ac:adf-mark key="border" size="2" color="#091e4224" /></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 4. </strong>Select the prepared <em><strong>ZIP file.</strong></em></h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="377" ac:original-width="846" ac:custom-width="true" ac:alt="image-20241203-170023.png" ac:width="760"><ri:attachment ri:filename="image-20241203-170023.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 3. Select the Prepared ZIP File</p></ac:caption></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 5. </strong>Give a name of your App and click on <em><strong>UPLOAD</strong></em> button</h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="691" ac:original-width="1085" ac:custom-width="true" ac:alt="image-20250127-141137.png" ac:width="760"><ri:attachment ri:filename="image-20250127-141137.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 4. Give an App Name and Click on Upload Button</p></ac:caption></ac:image>
+<p />
+<p /><ac:structured-macro ac:name="info" ac:schema-version="1" ac:macro-id="536bb7cd-9694-4559-9ff4-2f76f8669288"><ac:rich-text-body>
+<p>You can also give a thumbnail of your app. You can enable the <strong>Send Updates On Email</strong> button to get alert by an email when the app is ready.</p></ac:rich-text-body></ac:structured-macro>
+<p />
+<p /><ac:structured-macro ac:name="info" ac:schema-version="1" ac:macro-id="de3a3677-39f8-4cf6-88c3-0ab913941fcb"><ac:rich-text-body>
+<p><strong>When you upload an app it undergoes 6 phases in the upload sequence to finally get uploaded. To see what happens in these phase see </strong><ac:link><ri:page ri:content-title="Phases in the Upload Sequence" ri:version-at-save="69" /><ac:link-body><strong>this docs</strong></ac:link-body></ac:link></p></ac:rich-text-body></ac:structured-macro>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 6. </strong>Wait some times(Est. Time will be shown in the control panel).</h1>
+<p /><ac:structured-macro ac:name="note" ac:schema-version="1" ac:macro-id="61302990-f873-4481-954e-c1437c219c9f"><ac:rich-text-body>
+<p><strong>If you face any kind of error in the upload sequences then check </strong><ac:link><ri:page ri:content-title="Phases in the Upload Sequence" ri:version-at-save="69" /><ac:link-body><strong>this docs</strong></ac:link-body></ac:link></p></ac:rich-text-body></ac:structured-macro>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="706" ac:original-width="1083" ac:custom-width="true" ac:alt="image-20241203-170725.png" ac:width="760"><ri:attachment ri:filename="image-20241203-170725.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 5. App is Uploading</p></ac:caption></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 7.</strong> You can see your App in the control panel. Click on it.</h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="964" ac:original-width="1640" ac:custom-width="true" ac:alt="image-20241203-173911.png" ac:width="760"><ri:attachment ri:filename="image-20241203-173911.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 6. App is Uploaded</p></ac:caption></ac:image>
+<p />
+<p>&nbsp;</p>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 8.</strong> Click on the app and click <em><strong>Create New Stream link.</strong></em></h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="693" ac:original-width="1086" ac:custom-width="true" ac:alt="image-20241203-174009.png" ac:width="760"><ri:attachment ri:filename="image-20241203-174009.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 7. Create New Stream Link</p></ac:caption></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 9.</strong> Click on <em><strong>Play App</strong></em><strong> </strong>to stream your App.</h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="692" ac:original-width="1081" ac:custom-width="true" ac:alt="image-20241203-174036.png" ac:width="760"><ri:attachment ri:filename="image-20241203-174036.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 8. Play App</p></ac:caption></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 10.</strong> Wait for machine.</h1>
+<p /><ac:structured-macro ac:name="note" ac:schema-version="1" ac:macro-id="e0913d94-2fac-4aa5-8c4d-45f94aa0778b"><ac:rich-text-body>
+<p><strong>If the app is stuck in a queue then check </strong><a href="https://docs.eagle3dstreaming.com/wiki/phases-after-accessing-the-streaming-url#PhasesAfterAccessingtheStreamingURL-Troubleshooting"><strong>this documentation</strong></a></p></ac:rich-text-body></ac:structured-macro>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="965" ac:original-width="1678" ac:custom-width="true" ac:alt="image-20241203-174153.png" ac:width="760"><ri:attachment ri:filename="image-20241203-174153.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 9. The UI while Waiting for a Machine</p></ac:caption></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 11. </strong>Press <em><strong>Play</strong></em> button.</h1>
+<p /><ac:structured-macro ac:name="note" ac:schema-version="1" ac:macro-id="d72aa312-9ba9-48e0-acee-8b07c6ac4e85"><ac:rich-text-body>
+<p><strong>If play button is not showing, please refer to </strong><a href="https://docs.eagle3dstreaming.com/wiki/phases-after-accessing-the-streaming-url#PhasesAfterAccessingtheStreamingURL-Troubleshooting"><strong>this documentation</strong></a></p></ac:rich-text-body></ac:structured-macro>
+<p />
+<p /><ac:structured-macro ac:name="info" ac:schema-version="1" ac:macro-id="e834e1d3-c129-4104-a0af-416a1065d4b3"><ac:rich-text-body>
+<p><strong>If you want to learn about all the phases after accessing your streaming URL, please refers to </strong><ac:link><ri:page ri:content-title="Phases After Accessing the Streaming URL" ri:version-at-save="67" /><ac:link-body><strong>this documentations</strong></ac:link-body></ac:link></p></ac:rich-text-body></ac:structured-macro><ac:image ac:align="center" ac:layout="center" ac:original-height="955" ac:original-width="1719" ac:custom-width="true" ac:alt="image-20241203-174237.png" ac:width="760"><ri:attachment ri:filename="image-20241203-174237.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 10. Press Play Button</p></ac:caption></ac:image>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1><strong>Step 12.</strong> Now you can see the app is streaming.</h1>
+<p /><ac:image ac:align="center" ac:layout="center" ac:original-height="977" ac:original-width="1692" ac:custom-width="true" ac:alt="image-20241203-174341.png" ac:width="760"><ri:attachment ri:filename="image-20241203-174341.png" ri:version-at-save="1" /><ac:caption>
+<p>Figure 11. The App is Streaming</p></ac:caption></ac:image>
+<p />
+<p />
+<p /><ac:structured-macro ac:name="tip" ac:schema-version="1" ac:macro-id="5e5f8d99-846b-42d9-bff9-f0450f26b511"><ac:rich-text-body>
+<p><strong>Congratulations! You have streamed your own app successfully. If you are interested in set up and stream a multiplayer app then check </strong><ac:link><ri:page ri:content-title="Getting Started with Multiplayer Streaming" ri:version-at-save="18" /><ac:link-body><strong>this document</strong></ac:link-body></ac:link></p></ac:rich-text-body></ac:structured-macro>
+<p />
+<p /><ac:structured-macro ac:name="info" ac:schema-version="1" ac:macro-id="95683759-cb5a-4385-a147-437b7d2eaf5b"><ac:rich-text-body>
+<p><strong>You can stream your app from your mobile phone. For this check </strong><ac:link><ri:page ri:content-title="Stream App using Mobile Browser" ri:version-at-save="17" /><ac:link-body><strong>this document</strong></ac:link-body></ac:link></p></ac:rich-text-body></ac:structured-macro>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<hr />
+<h3>Need help?</h3>
+<p>🛠️ Contact our <a href="https://eagle3dstreaming.atlassian.net/servicedesk/customer/portals"><strong>Support Team</strong></a></p>
+<p>💬 Join the <a href="https://discord.gg/GRXD29Ah42"><strong>Community on Discord</strong></a></p>
+<p>🆓  <a href="https://controlpanel.eagle3dstreaming.com/signup"><strong>Get Started for free</strong></a></p>
+<p>&nbsp;</p>
+<p>Follow us on:</p>
+<p><a href="https://www.facebook.com/Eagle3DStreaming/"><strong>Facebook</strong></a> | <a href="https://github.com/e3ds"><strong>GitHub</strong></a> | <a href="https://www.linkedin.com/company/eagle-3d-streaming"><strong>LinkedIn</strong></a> | <a href="https://www.youtube.com/@eagle3dstreaming"><strong>YouTube</strong></a></p>
