@@ -1,0 +1,89 @@
+
+<p>This document explains how user-generated files (such as PDFs, screenshots, and other runtime outputs) are stored in Eagle 3D Streaming and how they are managed and deleted over time.</p>
+<p />
+<p />
+<p />
+<h1>Where Files Are Stored</h1>
+<p>Files are stored in <strong>two main locations</strong>:</p>
+<ol start="1">
+<li>
+<p><strong>Streaming Machine (where the Unreal app is running)</strong></p>
+<ul>
+<li>
+<p>Files generated or uploaded during runtime (e.g., screenshots, PDFs) are stored in the same machine that runs your Unreal application.</p></li></ul></li>
+<li>
+<p><strong>Cloud Storage</strong></p>
+<ul>
+<li>
+<p>Files may also be uploaded to our cloud storage.</p></li>
+<li>
+<p>These files are only accessible <strong>programmatically</strong> (via APIs) and cannot be accessed manually.</p></li></ul></li></ol>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1>File Deletion Policy</h1>
+<h3>Cloud Storage</h3>
+<ul>
+<li>
+<p>Files stored in cloud storage are <strong>automatically deleted after 7 days</strong>.</p></li>
+<li>
+<p>Access to these files is programmatic only, no manual browsing is allowed.<br /><br /></p></li></ul>
+<h3>Streaming Machine</h3>
+<ul>
+<li>
+<p>Files stored in the streaming machine are cleaned up <strong>periodically</strong> when:</p>
+<ul>
+<li>
+<p>A <strong>new version of your app</strong> is uploaded.</p></li>
+<li>
+<p>The system performs a scheduled cleanup.</p></li></ul></li>
+<li>
+<p>This cleanup does <strong>not always happen immediately</strong> and is triggered periodically.</p></li>
+<li>
+<p><strong>Important:</strong> If files are not saved inside your <strong>app directory</strong>, our system will not delete them.</p></li></ul>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<h1>File Management Recommendations</h1>
+<ul>
+<li>
+<p><strong>Save inside the app directory</strong>: Ensure files are written within your app directory so they are automatically included in cleanup operations.</p></li>
+<li>
+<p><strong>Overwriting files</strong>: You can safely overwrite an existing file by saving a new file with the same name. The older file will be replaced.</p></li>
+<li>
+<p><strong>Avoid storing outside the app directory</strong>: Files saved elsewhere will persist and may need manual removal.</p></li></ul>
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p />
+<p>&nbsp;</p>
+<hr />
+<h3>Need help?</h3>
+<p>🛠️ Contact our <a href="https://eagle3dstreaming.atlassian.net/servicedesk/customer/portals"><strong>Support Team</strong></a></p>
+<p>💬 Join the <a href="https://discord.gg/GRXD29Ah42"><strong>Community on Discord</strong></a></p>
+<p>🆓  <a href="https://controlpanel.eagle3dstreaming.com/signup"><strong>Get Started for free</strong></a></p>
+<p>&nbsp;</p>
+<p>Follow us on:</p>
+<p><a href="https://www.facebook.com/Eagle3DStreaming/"><strong>Facebook</strong></a> | <a href="https://github.com/e3ds"><strong>GitHub</strong></a> | <a href="https://www.linkedin.com/company/eagle-3d-streaming"><strong>LinkedIn</strong></a> | <a href="https://www.youtube.com/@eagle3dstreaming"><strong>YouTube</strong></a></p>
